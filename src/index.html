@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 22</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #F0ED97;
+        }
+
+        .create-form {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            border: 3px solid #F0C61C;
+            border-radius: 10px;
+            background: #F0E276;
+            padding: 10px;
+            margin-block-end: 20px;
+            width: 500px;
+        }
+
+        .checkbox-check {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+        
+        .status-checkbox {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .text-input,
+        .noteTextStyle {
+            border: 2px solid #F0C61C;
+            border-radius: 10px;
+            background: #F0E276;
+            min-height: 20px;
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 350px;
+            text-align: center;
+        }
+        
+        ul {
+            padding: 0;
+        }
+
+        .text-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 10px;
+        }
+
+        .noteTextStyle {
+            max-width: 350px;
+            min-height: 100px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+
+        .add-button {
+            text-align: center;
+        }
+
+        .addB,
+        .remove {
+            border: 2px solid #F0C61C;
+            border-radius: 10px;
+            background: #F0E276;
+            width: 150px;
+            height: 30px;
+        }
+
+        .remove:hover {
+            background: #F0C61C;
+        }
+
+        .addB:hover {
+            background: #F0C61C;
+        }
+    </style>
+</head>
+<body>
+    <form class="create-form add" name="add=form">
+        <h1 class="addHeader">ADD NOTE</h1>
+        
+        <div class="text-box">
+            <label><input type="text" class="text-input" name="noteName" placeholder="Name your note" autocomplete="off" spellcheck="false" /></label>
+            <textarea type="text" class="text-input noteTextStyle" name="noteText" placeholder="Write your note" autocomplete="off" spellcheck="false"></textarea>
+        </div>
+        <div class="add-button">
+            <button class="addB">Add</button>
+        </div>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
